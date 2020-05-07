@@ -3,27 +3,17 @@
  * @return {string}
  */
 var longestCommonPrefix = function(strs) {
-    let i = 0
-    let res = ''
-    let loop = true
-    if(strs.length === 0){
-        return res
-    }
-    while(loop){
-        let c = strs[0][i]
-        let isSame = strs.every(val => {
-            if(!val[i]){
-                loop = false
-                return false
-            }
-            return val[i] === c
-        })
-        if(isSame){
-            res += c
-            i++
+    let prefix = ''
+    let index = 0
+    const base = strs.pop()
+    let c
+    while(base && (c = base[index])) {
+        if (strs.every(str => str[index] === c)) {
+            prefix += c
+            index++
         } else {
-            loop = false
+            break
         }
     }
-    return res
+    return prefix
 };
