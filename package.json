@@ -1,0 +1,26 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "Leetcode solutions in javascript",
+  "main": "001_两数之和.js",
+  "dependencies": {
+    "jest": "^26.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaoChengyin/leetcode.git"
+  },
+  "keywords": [
+    "leetcode"
+  ],
+  "author": "xiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XiaoChengyin/leetcode/issues"
+  },
+  "homepage": "https://github.com/XiaoChengyin/leetcode#readme"
+}
